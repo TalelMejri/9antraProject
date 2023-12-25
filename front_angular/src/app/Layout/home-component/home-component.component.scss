@@ -1,0 +1,79 @@
+.home{
+    height: 100vh;
+    background-color: rgb(50, 48, 48);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.lettre{
+    color: green;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.image img{
+    border-radius:200%;
+    border: 5px solid red;
+}
+
+.titre{
+    color: white;
+    font-size: 28px;
+    margin-left: 5px;
+}
+
+.paragraph{
+    color: rgb(23, 221, 23);
+    font-size: 60px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.circle {
+    margin-left: -20px;
+    width: 100px; 
+    height: 140px;
+    padding: 30px 30px;
+    background-color: green; 
+    border-bottom-right-radius:200px;
+    border-top-right-radius:200px;
+    filter: drop-shadow(0 0 3rem green);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 25px;
+    margin-top: 30px;
+    height: 70px;
+    padding: 15px 50px;
+}
+
+.circle2{
+    margin-top: 40px;
+    margin-left: 50%;
+    width: 200px; 
+    height: 100px;
+    background-color: green; 
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    filter: drop-shadow(0 0 5rem green);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.circle3{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.circle4{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}

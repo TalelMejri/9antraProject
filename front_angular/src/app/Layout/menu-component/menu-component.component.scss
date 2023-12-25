@@ -1,0 +1,44 @@
+.menu{
+    margin-top: 50px;
+}
+.titre_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+}
+
+.titre{
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 5px;
+    border-bottom: 2px solid red;
+    display: inline-block;
+}
+.name_menu{
+    margin: 50px;
+    color: rgb(19, 207, 19);
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+img{
+    border-radius: 10%;
+}
+
+.name{
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.prix{
+ color: green;
+ font-size: 20px;
+}
+
+.voir{
+    color: red;
+}
