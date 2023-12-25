@@ -2518,3 +2518,69 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-26 00:31:52.411
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.sesofnVS => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-26 00:33:08.575
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-26 00:33:08.575
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@1b89debc[org.springframework.tooling.boot.ls:1.15.0.202001210741(id=632)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-26 00:33:08.576
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-26 00:33:09.806
+!MESSAGE Boot LS startup time from start to initialized: 1230ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-26 00:33:09.824
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.ZtsJWdopisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-26 00:33:09.825
+!MESSAGE subscribing to classpath changes: sts4.classpath.ZtsJWdop isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-26 00:33:09.825
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-26 00:33:09.825
+!MESSAGE subsribers = {sts4.classpath.ZtsJWdop=Send Classpath Notifications(521)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-26 00:33:09.826
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-26 00:33:09.826
+!MESSAGE project The_bridge_backend ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-26 00:33:09.826
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-26 00:33:09.827
+!MESSAGE Preparing classpath changed notification The_bridge_backend
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-26 00:33:09.827
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.ZtsJWdop => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-26 00:33:09.827
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-26 00:33:09.834
+!MESSAGE classpath=107 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-26 00:33:09.839
+!MESSAGE buffering callback sts4.classpath.ZtsJWdop The_bridge_backend false 107
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-26 00:33:09.839
+!MESSAGE executing callback sts4.classpath.ZtsJWdop 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-26 00:33:09.852
+!MESSAGE executing callback sts4.classpath.ZtsJWdop SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-26 00:50:45.222
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.ZtsJWdop
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-26 00:50:45.223
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.ZtsJWdop
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-26 00:50:45.223
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-12-26 00:50:45.223
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.ZtsJWdop => OK
