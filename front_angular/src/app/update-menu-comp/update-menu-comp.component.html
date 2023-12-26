@@ -1,0 +1,42 @@
+<main class="d-flex">
+    <app-side-bar-admin></app-side-bar-admin>
+  <div class="d-flex p-3 mt-5 m-4 justify-content-center">   
+      <div class="col-xl-10 ">
+            <div class="row shadow-lg rounded">
+                  <div class="col-lg-6">
+                          <div class="text-center">
+                             <h1 class="h4 fw-bolder mb-3 py-3">Update Menu</h1>
+                          </div>
+                      <form class="py-4" (ngSubmit)="UpdateMenu()" [formGroup]="MenuForm">
+                         <div class="row mb-4 ">
+                            <div class="col-lg-6">
+                              <label>Title</label>
+                              <input type="text"  class="form-control" [formControl]="titleForm" >
+                            </div>
+                            <div class="col-lg-6">
+                              <label>Price</label>
+                              <input type="text"  class="form-control" [formControl]="PrixForm" >
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="text-center">
+                                <img [src]="image" id="image" alt="">
+                            </div>
+                            <div class="col-lg-12">
+                              <label>Photo</label>
+                              <input type="file"  class="form-control" (change)="onFileChanged($event)"> 
+                            </div>
+                          </div>
+                          <div class="text-center mt-2">
+                               <button type="submit" class="btn btn-outline-success">Update Menu</button>
+                          </div>
+                      </form>
+                  </div>
+                  <div class="col-lg-6 d-none d-lg-block ">
+                     <img src="../../assets/images/sandwish.jpg" alt="">
+                  </div>
+            </div>
+            
+      </div>
+  </div>
+  </main>

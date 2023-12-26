@@ -1,0 +1,55 @@
+<main class="d-flex">
+  <app-side-bar-admin></app-side-bar-admin>
+   <div class="p-5" style="width: 100% !important;">
+      <p class="titre text-center">List Menu</p>
+      <button [routerLink]="['/Add']"  class="btn btn-primary">Add</button>
+      <div class="alert alert-success" *ngIf="message!=''">{{message}}</div>
+      <table class="table p-2">
+          <thead>
+              <tr>
+                <th>Id</th>
+                <th>Titre</th>
+                <th>prix</th>
+                <th>Image</th>
+                <th>Actions</th>
+              </tr>
+          </thead>
+          <tbody *ngIf="menus=='';else All">
+              <tr>
+                 <td colspan="5" class="text-center">No Table</td>
+              </tr>
+          </tbody>
+          <ng-template #All>
+          <tbody>
+              <tr *ngFor="let menu of menus">
+                <td>{{menu.id}}</td>
+                <td>{{menu.title}}</td>
+                <td>{{menu.prix}} TND</td>
+                <td><img src="{{menu.image}}" alt="" width="100px"></td>
+                <td>
+                    <button class="btn btn-danger mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal" >Delete</button>
+                    <button class="btn btn-warning" [routerLink]="['/update/'+ menu.id]" >Update</button>
+                </td>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Delete</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          You Wanna Delete This Menu ?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" (click)="DeleteMenu(menu.id)">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+              </tr>
+          </tbody>
+        </ng-template>
+      </table>
+   </div>
+</main>

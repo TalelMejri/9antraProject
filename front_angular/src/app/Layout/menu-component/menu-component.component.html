@@ -7,10 +7,10 @@
     <div>
         <p class="name_menu">Nos Fajitas</p>
         <div class="row m-5 text-center">
-            <div class="col-lg-4" *ngFor="let item of item">
-                <img src="../../../assets/images/sandwish.jpg" width="300px" alt="">
-                <p class="name">Trio Fajitas</p>
-                <p class="prix">49,90 DT</p>
+            <div class="col-lg-4" *ngFor="let item of menus">
+                <img [src]="item.image" width="300px" height="200px" alt="">
+                <p class="name">{{item.title}}</p>
+                <p class="prix">{{item.prix}} DT</p>
             </div>
         </div>
         <p class="voir text-center">voir plus</p>
