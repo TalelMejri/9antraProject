@@ -17,7 +17,7 @@ export class UpdateMenuCompComponent implements OnInit {
    
   }
 
-  titleForm=new FormControl('',[Validators.required,Validators.minLength(3),Validators.maxLength(8)]);
+  titleForm=new FormControl('',[Validators.required,Validators.minLength(3),Validators.maxLength(30)]);
   PrixForm=new FormControl('',[Validators.required]);
 
   MenuForm:FormGroup;
