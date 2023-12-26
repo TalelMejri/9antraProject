@@ -11,6 +11,7 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
 import { SideBarAdminComponent } from './Layout/side-bar-admin/side-bar-admin.component';
 import { AddMenuCompComponent } from './add-menu-comp/add-menu-comp.component';
 import { UpdateMenuCompComponent } from './update-menu-comp/update-menu-comp.component';
+import { PreloaderComponent } from './preloader/preloader.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { UpdateMenuCompComponent } from './update-menu-comp/update-menu-comp.com
     AdminDashboardComponent,
     SideBarAdminComponent,
     AddMenuCompComponent,
-    UpdateMenuCompComponent
+    UpdateMenuCompComponent,
+    PreloaderComponent
   ],
   imports: [
     BrowserModule,
