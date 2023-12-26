@@ -18,7 +18,7 @@ export class AddMenuCompComponent {
     });
   }
 
-  titleForm=new FormControl('',[Validators.required,Validators.minLength(3),Validators.maxLength(8)]);
+  titleForm=new FormControl('',[Validators.required,Validators.minLength(3),Validators.maxLength(20)]);
   PrixForm=new FormControl('',[Validators.required]);
 
   MenuForm:FormGroup;
@@ -68,6 +68,7 @@ export class AddMenuCompComponent {
         }
       ).subscribe((res)=>{
          this.Router.navigate(['/admin'],{queryParams:{message:"Item Added"}});
+         this.MenuForm.reset();
          console.log(res);
       })
     }

@@ -12,10 +12,12 @@
                           <div class="col-lg-6">
                             <label>Title</label>
                             <input type="text"  class="form-control" [formControl]="titleForm" >
+                            <small class="text-danger" *ngIf="titleForm.invalid">{{getTitleError()}}</small>
                           </div>
                           <div class="col-lg-6">
                             <label>Price</label>
                             <input type="text"  class="form-control" [formControl]="PrixForm" >
+                            <small class="text-danger" *ngIf="PrixForm.invalid">{{gePrixError()}}</small>
                           </div>
                         </div>
                         <div class="row">
